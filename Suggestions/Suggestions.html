@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Suggestions</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="../images/waterdrop.png">
+  <link rel="stylesheet" href="Loadingscreen.css">
+  <link rel="stylesheet" href="navigation_bar.css">
+  <link rel="stylesheet" href="containers.css">
+  <link rel="stylesheet" href="suggestions_form.css">
+  <link rel="stylesheet" href="write_to_us.css">
+  <link rel="stylesheet" href="footer_respon.css">
+  <link rel="stylesheet" href="scroral_bar.css">
+  <link rel="stylesheet" href="Animation.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/022a1e7040.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a54d2cbf95.js" ></script>
+
+  <script type="text/javascript">
+
+    function validate()
+        {
+            var name=document.getElementById('User').value;
+            var password=document.getElementById('pword').value;
+            var gender=document.form1.gender.value;
+            var fname=document.getElementById('firstname').value;
+            var lname=document.getElementById('lastname').value;
+            var email=document.getElementById('email').value;
+            var acode=document.getElementById('code').value;
+            var number=document.getElementById('number').value;
+            var country=document.getElementById('kingdom').value;
+
+            if(name=="")
+            {
+                alert("Please Enter Your Own User Name! ");
+                return false;
+            }
+             else if (password=="") 
+            {
+              alert("Please Enter Your Own Password! ");
+              return false;
+            }
+             else if (gender=="") 
+            {
+              alert("Please Selsect Your Gender!");
+              return false;
+            }
+             else if (fname=="") 
+            {
+              alert("Please Selsect Your First Name!");
+              return false;
+            }
+             else if (lname=="") 
+            {
+              alert("Please Selsect Your Last Name!");
+              return false;
+            }
+      
+            else if (email=="") 
+            {
+              alert("Please Enter Your Personal Email !");
+              return false;
+
+            }
+            else if (acode=="") 
+            {
+              alert("Please Enter Your Area Code! ");
+              return false;
+            }
+             else if (number=="") 
+            {
+              alert("Please Enter Your Mobile Number! ");
+              return false;
+            }
+             else if (country=="") 
+            {
+              alert("Please Selsect Your Personal Kingdom ! ");
+              return false;
+            }
+            else(country!=""||number!=""|| acode!="" ||email!="" ||lname!=""||fname!=""||gender!=""||password!=""||name!="")
+            {
+              alert("Your Registration is Successfully! Thanks For Registration! ");
+            }
+        } 
+        /*function onclickfn()
+        {
+        if (country!=""||number!=""|| acode!="" ||email!="" ||lname!=""||fname!=""||gender!=""||password!=""||name!="")
+        {
+          document.location.href="login.html";
+        } 
+       }*/
+    
+  </script>
+
+<body >
+ <div class="loadack"><div id="loader"></div></div>
+
+    <div id="stars"></div>
+</div>
+
+  <!--Navigation Bar -->
+   <div id="hero">
+            <div class="nav-bar">
+              <div class="nav-logo">
+                        <a href=""><button class="btn0 button11"></button></a>
+                    </div>
+                    <div class="nav-links" id="nav-links">
+                        <i id="to-top" class="fas fa-times-circle" onclick="closeMenu()"></i>
+                        <ul>
+                          <div class="dropdown">
+                            <li><a id="link1" href="../index.html" class="hometab">Home</a>
+                              <div class="dropdown-content">
+                                <a href="../index.html#container1">Water</a>
+                                <a href="../index.html#container4">Sanitation</a>
+                                <a href="../index.html#container6">Importance</a>
+                                <a href="../index.html#container7">Water Resources</a>
+                              </div>
+                          </div>  
+                          </li>
+ 
+                          <div class="dropdown">
+                            <li><a id="link1" href="../Problems/problem.html">Problems</a>
+                              <div class="dropdown-content">
+                                <a href="../Problems/problem.html#problemcon1">Water pollution</a>
+                                <a href="../Problems/problem.html#problemcon2">water contamination ways</a>
+                                <a href="../Problems/problem.html#problemcon3">Poor Sanitation</a>
+                                <a href="../Problems/problem.html#problemcon4">Causes of poor sanitation</a>
+                              </div>
+                          </div>  
+                            </li>
+ 
+                          <div class="dropdown">
+                            <li><a id="link1" href="../Solutions/solutions.html">Solutions</a>
+                              <div class="dropdown-content">
+                                <a href="../Solutions/solutions.html#sol1">Water</a>
+                                <a href="../Solutions/solutions.html#sol2">Sanitation</a>
+                              </div>
+                          </div>  
+                            </li>
+                           <div class="dropdown">
+                            <li><a id="link1" href="../Overview/Overview.html">Overview</a>
+                              <div class="dropdown-content">
+                              </div>
+
+                            </div>
+
+                            </li>
+
+
+                            <div class="dropdown">
+                            <li><a id="link1" href="../Suggestions/Suggestions.html">Suggestions</a>
+                            <div class="dropdown-content">
+                              <a href="../Suggestions/profile.php">Uplaod Articles</a>
+                            </div>
+                          </div>
+                            </li>
+ 
+                           
+                            <li><a id="link1" href="../Suggestions/login.php">Sign In</a>
+                            </li>
+ 
+                        </ul>
+                    </div>
+                    <i id="to-top" class="fas fa-bars" onclick="showMenu()"></i>
+            </div>
+         </div>
+<!--Background Div First Image Added -->
+<div id="container1">
+        <img src="../images/Suggestion_01.png" alt="world" class="responsive1">
+
+</div>
+ 
+ <!--<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+
+              <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
+
+              <g class="parallax">
+
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+
+              </g>
+
+            </svg>-->
+
+
+<div id="container2" class="responsive2">
+<div id="cotainer_sub1">
+  <form action="registration.php" method="POST" name="form1" class="formcss" onsubmit="return validate()";>
+    <legend><h1>Registration Form</h1></legend>
+   
+       <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="input69" id="firstname" name="fanme" placeholder="John"><br>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="input69" id="lastname" name="lname" placeholder="Wick"><br>
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" class="input69" id="email" name="email" placeholder="abc@gmail.com"><br>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-25">
+        <label for="phone">Phone</label>
+      </div>
+      <div class="col-75">
+        <input type="number" class="input69" id="code" name="area_code" placeholder="+94"> 
+        <label id="labelarea-code">Country Code</label>
+          <input type="number" class="input69" id="number"name="phone" placeholder="77xxxxxxx">
+          <label id="labelphone-number"></label><br>
+       </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-25">
+        <label for="gender">Gender</label>
+      </div>
+      <div class="col-75">
+        <input type="radio"  name="gender" id="m" value="male">
+        <label id="labelmale">Male</label>
+        <input type="radio"  name="gender" id="f" value="female">
+        <label id="labelfeamle">Female</label><br>
+      </div>
+    </div>
+
+
+     <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+   <select id="kingdom" name="kingdom">
+   <option value="">----Choose Your Country----</option>
+   <option value="Afganistan">Afghanistan</option>
+   <option value="Albania">Albania</option>
+   <option value="Algeria">Algeria</option>
+   <option value="American Samoa">American Samoa</option>
+   <option value="Andorra">Andorra</option>
+   <option value="Angola">Angola</option>
+   <option value="Anguilla">Anguilla</option>
+   <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+   <option value="Argentina">Argentina</option>
+   <option value="Armenia">Armenia</option>
+   <option value="Aruba">Aruba</option>
+   <option value="Australia">Australia</option>
+   <option value="Austria">Austria</option>
+   <option value="Azerbaijan">Azerbaijan</option>
+   <option value="Bahamas">Bahamas</option>
+   <option value="Bahrain">Bahrain</option>
+   <option value="Bangladesh">Bangladesh</option>
+   <option value="Barbados">Barbados</option>
+   <option value="Belarus">Belarus</option>
+   <option value="Belgium">Belgium</option>
+   <option value="Belize">Belize</option>
+   <option value="Benin">Benin</option>
+   <option value="Bermuda">Bermuda</option>
+   <option value="Bhutan">Bhutan</option>
+   <option value="Bolivia">Bolivia</option>
+   <option value="Bonaire">Bonaire</option>
+   <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+   <option value="Botswana">Botswana</option>
+   <option value="Brazil">Brazil</option>
+   <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+   <option value="Brunei">Brunei</option>
+   <option value="Bulgaria">Bulgaria</option>
+   <option value="Burkina Faso">Burkina Faso</option>
+   <option value="Burundi">Burundi</option>
+   <option value="Cambodia">Cambodia</option>
+   <option value="Cameroon">Cameroon</option>
+   <option value="Canada">Canada</option>
+   <option value="Canary Islands">Canary Islands</option>
+   <option value="Cape Verde">Cape Verde</option>
+   <option value="Cayman Islands">Cayman Islands</option>
+   <option value="Central African Republic">Central African Republic</option>
+   <option value="Chad">Chad</option>
+   <option value="Channel Islands">Channel Islands</option>
+   <option value="Chile">Chile</option>
+   <option value="China">China</option>
+   <option value="Christmas Island">Christmas Island</option>
+   <option value="Cocos Island">Cocos Island</option>
+   <option value="Colombia">Colombia</option>
+   <option value="Comoros">Comoros</option>
+   <option value="Congo">Congo</option>
+   <option value="Cook Islands">Cook Islands</option>
+   <option value="Costa Rica">Costa Rica</option>
+   <option value="Cote DIvoire">Cote DIvoire</option>
+   <option value="Croatia">Croatia</option>
+   <option value="Cuba">Cuba</option>
+   <option value="Curaco">Curacao</option>
+   <option value="Cyprus">Cyprus</option>
+   <option value="Czech Republic">Czech Republic</option>
+   <option value="Denmark">Denmark</option>
+   <option value="Djibouti">Djibouti</option>
+   <option value="Dominica">Dominica</option>
+   <option value="Dominican Republic">Dominican Republic</option>
+   <option value="East Timor">East Timor</option>
+   <option value="Ecuador">Ecuador</option>
+   <option value="Egypt">Egypt</option>
+   <option value="El Salvador">El Salvador</option>
+   <option value="Equatorial Guinea">Equatorial Guinea</option>
+   <option value="Eritrea">Eritrea</option>
+   <option value="Estonia">Estonia</option>
+   <option value="Ethiopia">Ethiopia</option>
+   <option value="Falkland Islands">Falkland Islands</option>
+   <option value="Faroe Islands">Faroe Islands</option>
+   <option value="Fiji">Fiji</option>
+   <option value="Finland">Finland</option>
+   <option value="France">France</option>
+   <option value="French Guiana">French Guiana</option>
+   <option value="French Polynesia">French Polynesia</option>
+   <option value="French Southern Ter">French Southern Ter</option>
+   <option value="Gabon">Gabon</option>
+   <option value="Gambia">Gambia</option>
+   <option value="Georgia">Georgia</option>
+   <option value="Germany">Germany</option>
+   <option value="Ghana">Ghana</option>
+   <option value="Gibraltar">Gibraltar</option>
+   <option value="Great Britain">Great Britain</option>
+   <option value="Greece">Greece</option>
+   <option value="Greenland">Greenland</option>
+   <option value="Grenada">Grenada</option>
+   <option value="Guadeloupe">Guadeloupe</option>
+   <option value="Guam">Guam</option>
+   <option value="Guatemala">Guatemala</option>
+   <option value="Guinea">Guinea</option>
+   <option value="Guyana">Guyana</option>
+   <option value="Haiti">Haiti</option>
+   <option value="Hawaii">Hawaii</option>
+   <option value="Honduras">Honduras</option>
+   <option value="Hong Kong">Hong Kong</option>
+   <option value="Hungary">Hungary</option>
+   <option value="Iceland">Iceland</option>
+   <option value="Indonesia">Indonesia</option>
+   <option value="India">India</option>
+   <option value="Iran">Iran</option>
+   <option value="Iraq">Iraq</option>
+   <option value="Ireland">Ireland</option>
+   <option value="Isle of Man">Isle of Man</option>
+   <option value="Israel">Israel</option>
+   <option value="Italy">Italy</option>
+   <option value="Jamaica">Jamaica</option>
+   <option value="Japan">Japan</option>
+   <option value="Jordan">Jordan</option>
+   <option value="Kazakhstan">Kazakhstan</option>
+   <option value="Kenya">Kenya</option>
+   <option value="Kiribati">Kiribati</option>
+   <option value="Korea North">Korea North</option>
+   <option value="Korea Sout">Korea South</option>
+   <option value="Kuwait">Kuwait</option>
+   <option value="Kyrgyzstan">Kyrgyzstan</option>
+   <option value="Laos">Laos</option>
+   <option value="Latvia">Latvia</option>
+   <option value="Lebanon">Lebanon</option>
+   <option value="Lesotho">Lesotho</option>
+   <option value="Liberia">Liberia</option>
+   <option value="Libya">Libya</option>
+   <option value="Liechtenstein">Liechtenstein</option>
+   <option value="Lithuania">Lithuania</option>
+   <option value="Luxembourg">Luxembourg</option>
+   <option value="Macau">Macau</option>
+   <option value="Macedonia">Macedonia</option>
+   <option value="Madagascar">Madagascar</option>
+   <option value="Malaysia">Malaysia</option>
+   <option value="Malawi">Malawi</option>
+   <option value="Maldives">Maldives</option>
+   <option value="Mali">Mali</option>
+   <option value="Malta">Malta</option>
+   <option value="Marshall Islands">Marshall Islands</option>
+   <option value="Martinique">Martinique</option>
+   <option value="Mauritania">Mauritania</option>
+   <option value="Mauritius">Mauritius</option>
+   <option value="Mayotte">Mayotte</option>
+   <option value="Mexico">Mexico</option>
+   <option value="Midway Islands">Midway Islands</option>
+   <option value="Moldova">Moldova</option>
+   <option value="Monaco">Monaco</option>
+   <option value="Mongolia">Mongolia</option>
+   <option value="Montserrat">Montserrat</option>
+   <option value="Morocco">Morocco</option>
+   <option value="Mozambique">Mozambique</option>
+   <option value="Myanmar">Myanmar</option>
+   <option value="Nambia">Nambia</option>
+   <option value="Nauru">Nauru</option>
+   <option value="Nepal">Nepal</option>
+   <option value="Netherland Antilles">Netherland Antilles</option>
+   <option value="Netherlands">Netherlands (Holland, Europe)</option>
+   <option value="Nevis">Nevis</option>
+   <option value="New Caledonia">New Caledonia</option>
+   <option value="New Zealand">New Zealand</option>
+   <option value="Nicaragua">Nicaragua</option>
+   <option value="Niger">Niger</option>
+   <option value="Nigeria">Nigeria</option>
+   <option value="Niue">Niue</option>
+   <option value="Norfolk Island">Norfolk Island</option>
+   <option value="Norway">Norway</option>
+   <option value="Oman">Oman</option>
+   <option value="Pakistan">Pakistan</option>
+   <option value="Palau Island">Palau Island</option>
+   <option value="Palestine">Palestine</option>
+   <option value="Panama">Panama</option>
+   <option value="Papua New Guinea">Papua New Guinea</option>
+   <option value="Paraguay">Paraguay</option>
+   <option value="Peru">Peru</option>
+   <option value="Phillipines">Philippines</option>
+   <option value="Pitcairn Island">Pitcairn Island</option>
+   <option value="Poland">Poland</option>
+   <option value="Portugal">Portugal</option>
+   <option value="Puerto Rico">Puerto Rico</option>
+   <option value="Qatar">Qatar</option>
+   <option value="Republic of Montenegro">Republic of Montenegro</option>
+   <option value="Republic of Serbia">Republic of Serbia</option>
+   <option value="Reunion">Reunion</option>
+   <option value="Romania">Romania</option>
+   <option value="Russia">Russia</option>
+   <option value="Rwanda">Rwanda</option>
+   <option value="St Barthelemy">St Barthelemy</option>
+   <option value="St Eustatius">St Eustatius</option>
+   <option value="St Helena">St Helena</option>
+   <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+   <option value="St Lucia">St Lucia</option>
+   <option value="St Maarten">St Maarten</option>
+   <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+   <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+   <option value="Saipan">Saipan</option>
+   <option value="Samoa">Samoa</option>
+   <option value="Samoa American">Samoa American</option>
+   <option value="San Marino">San Marino</option>
+   <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+   <option value="Saudi Arabia">Saudi Arabia</option>
+   <option value="Senegal">Senegal</option>
+   <option value="Seychelles">Seychelles</option>
+   <option value="Sierra Leone">Sierra Leone</option>
+   <option value="Singapore">Singapore</option>
+   <option value="Slovakia">Slovakia</option>
+   <option value="Slovenia">Slovenia</option>
+   <option value="Solomon Islands">Solomon Islands</option>
+   <option value="Somalia">Somalia</option>
+   <option value="South Africa">South Africa</option>
+   <option value="Spain">Spain</option>
+   <option value="Sri Lanka">Sri Lanka</option>
+   <option value="Sudan">Sudan</option>
+   <option value="Suriname">Suriname</option>
+   <option value="Swaziland">Swaziland</option>
+   <option value="Sweden">Sweden</option>
+   <option value="Switzerland">Switzerland</option>
+   <option value="Syria">Syria</option>
+   <option value="Tahiti">Tahiti</option>
+   <option value="Taiwan">Taiwan</option>
+   <option value="Tajikistan">Tajikistan</option>
+   <option value="Tanzania">Tanzania</option>
+   <option value="Thailand">Thailand</option>
+   <option value="Togo">Togo</option>
+   <option value="Tokelau">Tokelau</option>
+   <option value="Tonga">Tonga</option>
+   <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+   <option value="Tunisia">Tunisia</option>
+   <option value="Turkey">Turkey</option>
+   <option value="Turkmenistan">Turkmenistan</option>
+   <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+   <option value="Tuvalu">Tuvalu</option>
+   <option value="Uganda">Uganda</option>
+   <option value="United Kingdom">United Kingdom</option>
+   <option value="Ukraine">Ukraine</option>
+   <option value="United Arab Erimates">United Arab Emirates</option>
+   <option value="United States of America">United States of America</option>
+   <option value="Uraguay">Uruguay</option>
+   <option value="Uzbekistan">Uzbekistan</option>
+   <option value="Vanuatu">Vanuatu</option>
+   <option value="Vatican City State">Vatican City State</option>
+   <option value="Venezuela">Venezuela</option>
+   <option value="Vietnam">Vietnam</option>
+   <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+   <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+   <option value="Wake Island">Wake Island</option>
+   <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+   <option value="Yemen">Yemen</option>
+   <option value="Zaire">Zaire</option>
+   <option value="Zambia">Zambia</option>
+   <option value="Zimbabwe">Zimbabwe</option>
+</select>
+<br>
+     </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-25">
+        <label for="username">User Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="input69" id="User"name="username" placeholder="Username"> <br>
+         </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-25">
+        <label for="passwd">Password</label>
+      </div>
+      <div class="col-75">
+       <input type="password" id="pword"name="password" placeholder="Enter Your Strong Password"><br><br>
+      </div>
+    </div>
+
+
+     <!--<div class="row">
+      <div class="col-25">
+        <label for="para1" id="para">Would you hope to see our future save aqua programs?</label>
+      </div>
+      <div class="col-75">
+       <input type="radio"  name="yes" id="y">
+        <label id="yes">Yes</label>
+        <input type="radio"  name="no" id="n">
+        <label id="No">No</label><br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>-->
+
+
+    <div class="row">
+
+      <input type="submit" class="save" value="Submit" name="submit">
+
+      <input type="reset" class="cancel" value="Cancel" name="reset">
+    </div>
+  </form>
+</div>
+</div>
+ <div id="stars"></div>
+</div>
+  
+
+<section  class="back">
+<hr class="line">
+
+<div class="contact">
+<div id="content1"><span class="contacttext">CONTACTS</span><pre class="underline">__________________________</pre>
+  <span class="allto">All to contact us</span></div>
+
+<div id="content2">
+  <div class="contactinfo">
+<h4><u>Our Address</u></h4><br>
+<ul style="list-style:none; text-align:center;">
+  <li>
+    <i class="fa fa-map-marker fa-lg"></i>&nbsp
+    NSBM Green University,&nbsp&nbsp<br><br>
+    &nbsp &nbsp &nbspPitipana-Thalagala Rd,<br><br> Homagama.</li><br>
+
+      <li><i class="fa fa-phone"></i>&nbsp 0115 445 000</li><br>
+
+      <li><i class="fa fa-envelope"></i>&nbsp saveaqua2021@gmail.com</li>
+
+</ul>
+  </div>
+</div>
+
+<div id="content3" action="write_to_us.php" method="POST">
+  <h4>Write To Us</h4>
+  <form action="write_to_us.php" method="POST">
+<div class="form-group">
+  <input type="text" name="writename"class="form-control input-lg" placeholder="Your Name" required="">
+</div>
+
+<div class="form-group">
+  <input type="Email" name="writeemail"class="form-control input-lg" placeholder="E-mail" required="">
+</div>
+
+<div class="form-group">
+  <input type="text" name="writesubject"class="form-control input-lg" placeholder="Subject" required="">
+</div>
+
+<div class="form-group">
+  <textarea class="form-control input-lg" name="content" style="height: 100px; " placeholder="Message" required=""></textarea>
+  </div>
+
+  <input type="submit" name="send" class="btn" style="visibility: visible;" value="Send">
+</form>
+</div>
+
+
+</div>
+</section>
+
+<div class="container">
+
+  <div id="content10">
+    <h2>Useful Links</h2><br>
+    
+    <p>
+    <ul>
+      <li><a href="../index.html" class="hometab"><i class="fas fa-home"></i></i></i>&nbsp;Home</a></li>
+      <li><a href="../Problems/problem.html"><i class="fas fa-question"></i></i>&nbsp;Problems</a></li>
+      
+      <li><a href="../Solutions/Solutions.html"><i class="fas fa-tools"></i></i>&nbsp;Solutions</a></li>
+      
+      <li><a href="../Overview/Overview.html"><i class="fas fa-search"></i></i>&nbsp;Overview</a></li>
+      
+      <li><a href="../Suggestions/Suggestions.html"><i class="fas fa-comments"></i></i>&nbsp;Suggestions</a></li>
+
+    <li><a href="../Suggestions/login.php"><i class="fas fa-sign-in-alt"></i>&nbsp;Sign In</a></li>
+
+  </p>
+  </div>
+  <div id="content12">
+    <h2>Follow Us</h2><br>
+    <ul>
+    <li>
+     <a href="https://www.facebook.com/Save-Aqua-For-A-Better-Future-103062902125632"><i class="fab fa-facebook"></i>&nbsp;Facebook
+      </a></li>
+    <li><a href="https://www.youtube.com/channel/UCUl_fnrluEpWDQ3urYv_iQg"><i class="fab fa-youtube"></i>&nbsp;YouTube</a></li>
+     <li><a href="mailto:saveaqua2021@gmail.com"><i class="fas fa-envelope"></i>&nbsp;Gmail</a></li>
+     <li><a href="https://sdgs.un.org/goals/goal6"><i class="fas fa-globe-americas"></i>&nbsp;SDG</a></li>
+  
+</ul>
+  </div>
+    <div id="content13">
+  <h2>Technologies</h2><br>
+  <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>PHP</li>
+      <li>SQL</li>
+      <li>Photoshop</li>
+      <li>Bootstrap</li>
+      
+    </ul>
+
+</div>
+  <div class="footer">
+    <h3><h3>Copyright © 2021 - Designed & Developed by <span>WEB Application Development Group 07</span><h3>
+</h3></div>
+</div>
+
+
+<script>
+  let spin=DOC
+</script>
+  <script>
+          var show = document.getElementById("nav-links")
+          function showMenu()
+          {
+               show.style.right="0";
+          }
+          function closeMenu()
+          {
+               show.style.right="-200px";
+          }
+</script>
+
+<script>
+ 
+let spinnerWrapper = document.querySelector('.loadack');
+
+ window.addEventListener('load', function () {
+spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+});
+
+</script>
+
+        
+
+
+<!--<script>
+   
+    let loader = document.querySelector('.loader');
+ 
+    window.addEventListener('load', function () {
+        loader.parentElement.removeChild(loader);
+    });
+       var preloader = document.getElementById('cup');
+          function myfunctionload()
+          {
+             
+
+            preloader.style.display = 'none';
+
+          }
+
+
+</script>-->
+
+</body>
+</html>
