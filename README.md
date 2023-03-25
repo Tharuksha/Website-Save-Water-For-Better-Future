@@ -13,7 +13,7 @@
 
 <h2> Technologies Used </h2>
 
--The website was developed using the following technologies:
+- The website was developed using the following technologies:
 
 - - HTML
 - - CSS
